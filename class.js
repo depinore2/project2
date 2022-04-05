@@ -8,6 +8,6 @@ export class StudentInfoService {
         // you can read the file like this: readFileSync(`data/${classId}/${studentId}.json`)
     }
     getClassGpa(classId) {
-        
+        // you can check to see if a folder exists like this: existsSync(`data/${classId}`)
     }
 }

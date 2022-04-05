@@ -3,12 +3,21 @@
 
     node index.js <classId>
         If only the classId is provided, spit out the total classroom GPA.
-        If there is an error reading from the file, output "Unable to read class data." without crashing.
+        If the class doesn't exist, output "Class not found."
+        It's ok if it also spits out student-specific errors, as described below.
+
+        All classes always have students with ids student0 --> student29
 
     node index.js <classId> <studentId>
         If both a classId and studentId are provided, spit out the single student's GPA and full name.
         If the student does not exist, output "Student not on record" without crashing.
-        If the student does not have a GPA for some reason, output "GPA from this student is missing."
+        If the student does not have a GPA for some reason, output "GPA from student ${studentId} is missing."  
+        
+    If both classId and studentId are missing, output "Please provide at least a classId." without crashing.
+        
+    Tips: 
+    - Fields that are missing in json have the value of undefined.
+    - You can check to see if a folder exits using the 
 */
 
 
