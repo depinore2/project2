@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'fs'
 
-// Tip: you can read a JSON file and convert it into an object using JSON.stringify(). 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+// Tip: you can read a JSON file and convert it into an object using JSON.parse(). 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 
 export class StudentInfoService {
     getStudentGpa(classId, studentId) {
